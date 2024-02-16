@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    
+    <!-- ... d'autres configurations ... -->
+
+    <servlet>
+        <servlet-name>PersonneManager</servlet-name>
+        <jsp-file>/PersonneManager.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PersonneManager</servlet-name>
+        <url-pattern>/personneList</url-pattern>
+    </servlet-mapping>
+</web-app>

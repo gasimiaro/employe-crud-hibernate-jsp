@@ -1,0 +1,30 @@
+<!-- Personne.hbm.xml -->
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Model.Employe">
+
+    <class name="Employe" table="Employe">
+<!--        <id name="codeemp" type="int">
+            <column name="codeemp" />
+            <generator class="increment" />
+        </id>-->
+                <id name="codeemp" type="java.lang.String">
+            <column name="codeemp" />
+            <generator class="assigned" />
+        </id>
+
+        <property name="nom" type="java.lang.String">
+            <column name="nom" length="35" />
+        </property>
+
+        <property name="prenom" type="java.lang.String">
+            <column name="prenom" length="55" />
+        </property>
+
+        <property name="poste" type="java.lang.String">
+            <column name="poste" length="35" />
+        </property>
+    </class>
+
+</hibernate-mapping>

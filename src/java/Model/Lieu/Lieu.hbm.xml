@@ -1,0 +1,23 @@
+<!-- Personne.hbm.xml -->
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Model.Lieu">
+
+    <class name="Lieu" table="lieu">
+        <id name="codelieu" type="java.lang.String">
+            <column name="codelieu" />
+            <generator class="assigned" />
+        </id>
+
+        <property name="Designation" type="java.lang.String">
+            <column name="Designation" length="55" />
+        </property>
+
+        <property name="Province" type="java.lang.String">
+            <column name="Province" length="55" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>
